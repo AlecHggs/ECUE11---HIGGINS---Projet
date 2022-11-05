@@ -219,6 +219,15 @@ aside {
         position: static;
     }
 
+    .profile_button{
+        margin-right: 2rem;
+    }
+
+    aside {
+        img{
+            margin-right: 2rem;
+        }
+    }
 
     #statusVoiture {
         top: 13.8rem;
@@ -242,6 +251,7 @@ aside {
         position: absolute;
         left: 1rem;
         top: 38rem;
+        align-self: flex-end;
         width: 45%;
     }
 
