@@ -192,78 +192,42 @@ aside img {
 /* ------------------------------------------------------ */
 /* ------------------Tablette paysage------------------------ */
 @media screen and (orientation: landscape) and (min-width: 415px) {
-  .hautDePage {
-    position: absolute;
-    top: 10rem;
-    width: 50%;
-  }
-  .profile {
-    display: flex;
-    justify-content: space-between;
-    max-width: 90%;
-  }
-  .hautDePage::after {
-    content: url(./icons/batterie_bout_rectangle.svg);
-    position: absolute;
-    top: 3.45rem;
-    left: 3.2rem;
-  }
-  data {
-    font-size: 0.8rem;
-    position: absolute;
-    top: 3.25rem;
-    left: 3.6rem;
-  }
-  meter {
-    position: absolute;
-    top: 3rem;
-    width: 1.6rem;
-    height: 1.4rem;
-  }
-  meter::-webkit-meter-bar {
-    border-radius: 0px;
-    background-color: #2D2F33;
-    border: none;
-  }
-  meter::-webkit-meter-optimum-value {
-    background-color: #8A8B8C;
-  }
-  #statusVoiture {
-    position: absolute;
-    top: 4.3rem;
-  }
-  aside {
-    display: flex;
+  body {
+    flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: center;
-    position: absolute;
-    max-width: 50%;
-  }
-  aside img {
-    width: 80%;
+    align-items: center;
   }
   .menus {
-    width: 100%;
-    display: flex;
-    margin: 3rem 3rem;
+    box-shadow: 0 0 0;
+    height: fit-content;
+    position: static;
+    width: 50%;
+  }
+  header {
+    height: fit-content;
+    width: 50%;
+    position: static;
+  }
+  #statusVoiture {
+    top: 13.8rem;
+  }
+  data {
+    top: 12.65rem;
+    left: 2.8rem;
+  }
+  meter {
+    top: 12.5rem;
+  }
+  .hautDePage::after {
+    top: 13.05rem;
+    left: 2.6rem;
   }
   .menu_horizontal {
-    width: 40%;
     position: absolute;
-    top: 36rem;
-  }
-  .menu_horizontal img {
-    width: 34px;
-    height: 34px;
-  }
-  .menu_verticale {
-    width: 50%;
-    position: absolute;
-    right: 0px;
-  }
-  a::after {
-    content: url(./icons/chevron.svg);
-    position: absolute;
-    right: 1rem;
+    left: 1rem;
+    top: 38rem;
+    width: 45%;
   }
 }
 
