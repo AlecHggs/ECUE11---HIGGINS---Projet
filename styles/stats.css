@@ -1,3 +1,73 @@
+@font-face {
+  font-family: "Oxygen";
+  src: url(./font/Oxygen-Regular.ttf);
+}
+* {
+  box-sizing: border-box;
+}
 
+html {
+  font-family: "Oxygen", sans-serif;
+  background-color: #161717;
+  color: white;
+  width: 100%;
+}
+
+body {
+  width: 100%;
+}
+
+#jours {
+  margin-left: 2rem;
+}
+
+.additional_info img {
+  width: 20px;
+  height: auto;
+}
+
+.graph {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.graph img {
+  width: 100%;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  font-size: 0.7rem;
+}
+
+.donnees {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2rem;
+}
+
+#libelle_recharge {
+  color: #7F8080;
+}
+
+#donnee_recharge {
+  position: absolute;
+  top: 12rem;
+}
+
+#libelle_depenses {
+  color: #7F8080;
+}
+
+#donnee_depenses {
+  position: absolute;
+  top: 12rem;
+  left: 15.5rem;
+}
 
 /*# sourceMappingURL=stats.css.map */

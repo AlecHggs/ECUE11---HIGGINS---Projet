@@ -1,0 +1,72 @@
+@import "./variables.scss";
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-family: $font-style;
+    background-color: #161717;
+    color: $font-color;
+    width: 100%;
+}
+
+body{
+    width: 100%;
+}
+
+#jours {
+    margin-left: 2rem;
+}
+
+.additional_info{
+    img{
+        width: 20px;
+        height: auto;
+    }
+}
+
+.graph{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    img{
+        width: 100%;
+    }
+}
+
+a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: $font-color;
+    width: 100%;
+    font-size: 0.7rem;
+}
+
+.donnees{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+#libelle_recharge{
+    color: $font-secondary-color;
+}
+#donnee_recharge{
+    position: absolute;
+    top: 12rem;
+}
+#libelle_depenses{
+    color: $font-secondary-color;
+}
+#donnee_depenses{
+    position: absolute;
+    top: 12rem;
+    left: 15.5rem;
+}
+// TODO: Change chevron to other side
+// a::before {
+//     content: url(./icons/chevron.svg);
+// }

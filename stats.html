@@ -3,19 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/stats.css">
 </head>
 <body>
-
-    <h1>Statistiques de recharge</h1>
-    <h2>31 derniers jours</h2>
+    <a href="#" alt="">
+        <h1>Statistiques de recharge</h1>
+    </a>
+    <h2 id="jours">31 derniers jours</h2>
     <section>
         <title>Données 31 derniers jours</title>
-        <h3>Total recharge</h3>
-        <data>25 kWh</data>
-        <h3>Dépenses totales</h3>
-        <data>4 €</data>
-
-        <img class="house_icon" src="./styles/icons/house.svg" alt="">
+        <section class="donnees">
+            <h3 id="libelle_recharge">Total recharge</h3>
+            <data id="donnee_recharge">25 kWh</data>
+            <h3 id="libelle_depenses">Dépenses totales</h3>
+            <data id="donnee_depenses">4 €</data>
+        </section>
+        <section class="graph">
+            <img src="./styles/images/stats-graph.PNG" alt="">
+        </section>
+        <section class="additional_info">
+            <img class="maison_icon" src="./styles/icons/stats-domicile-icon.PNG" alt="">
+            <data>100%</data>
+            <h3>Domicile</h3>
+            <img class="travail_icon" src="./styles/icons/stats-lieu-travail-icon.PNG" alt="">
+            <data>0%</data>
+            <h3>Superchargeur</h3>
+            <img class="chargeur_icon" src="./styles/icons/stats-energie-icon.PNG" alt="">
+            <data>0%</data>
+            <h3>Lieu de travail</h3>
+            <img class="autre_icon" src="./styles/icons/stats-recharge-icon.PNG" alt="">
+            <data>0%</data>
+            <h3>Autre</h3>
+        </section>
+        <section>
+            <h1>Economies de carburant</h1>
+            <p>Rechargez jusqu'à au moins 75 kWh pour visualiser une estimation de vos économies de carburant.</p>
+        </section>
+        <section>
+            <h1>Coût moyen</h1>
+            <small>Par kWh</small>
+            <h2>Domicile</h2>
+            <meter min="0" max="100" value="100"></meter>
+            <data>0,17 €</data>
+            <h2>Superchargeur</h2>
+            <data>0,00 €</data>
+            <h2>Lieu de travail</h2>
+            <data>0,00 €</data>
+            <h2>Autre</h2>
+            <data>0,00 €</data>
+        </section>
+        <section>
+            <img src="./styles/icons/settings.svg" alt="">
+            <h1>Paramètres</h1>
+            <p>L'affichage de la devise se fait en fonction de la langue (français) et du payus (FR) de votre appareil.</p>
+        </section>
+        
     </section>
 </body>
 </html>
