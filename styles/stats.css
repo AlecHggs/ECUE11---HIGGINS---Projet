@@ -15,15 +15,37 @@ html {
 
 body {
   width: 100%;
+  margin: 0px;
 }
 
 #jours {
   margin-left: 2rem;
 }
 
-.additional_info img {
-  width: 20px;
-  height: auto;
+.info_additionnelles img {
+  max-width: 2rem;
+  max-height: 2rem;
+}
+.info_additionnelles ul {
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+.info_additionnelles ul li {
+  display: flex;
+  align-items: center;
+}
+.info_additionnelles ul li span {
+  margin-left: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+.info_additionnelles ul li span h3 {
+  margin: 0px;
+  color: #7F8080;
+  font-size: small;
 }
 
 .graph {
@@ -68,6 +90,82 @@ a {
   position: absolute;
   top: 12rem;
   left: 15.5rem;
+}
+
+.retour_vers_menu::before {
+  content: url(./icons/chevron-left.svg);
+  position: absolute;
+  left: 1rem;
+}
+
+.card {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 1rem;
+  background-color: #222323;
+}
+.card h1 {
+  margin-top: 0px;
+}
+.card h1::after {
+  content: url(./icons/info.svg);
+  position: absolute;
+  right: 1rem;
+  margin-top: 0.2rem;
+  width: 1rem;
+  height: 1rem;
+}
+.card p {
+  margin-bottom: 0px;
+  color: #7F8080;
+  font-weight: bold;
+}
+
+#cout_moyen section {
+  margin-top: 1rem;
+}
+#cout_moyen section:last-child {
+  margin-bottom: 0.5rem;
+}
+#cout_moyen progress {
+  width: 80%;
+}
+#cout_moyen h2 {
+  margin: 0px;
+  font-size: medium;
+}
+#cout_moyen data {
+  margin-bottom: 1rem;
+}
+
+.parametres {
+  display: flex;
+  flex-direction: column;
+}
+.parametres a {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 1rem;
+}
+.parametres a img {
+  margin-left: 1rem;
+  margin-right: 3rem;
+}
+.parametres a h1 {
+  font-size: large;
+  font-weight: bold;
+}
+.parametres a::after {
+  content: url(./icons/chevron.svg);
+  position: absolute;
+  right: 1rem;
+  margin-top: 0.2rem;
+  width: 1rem;
+  height: 1rem;
+}
+.parametres p {
+  margin: 2rem;
 }
 
 /*# sourceMappingURL=stats.css.map */

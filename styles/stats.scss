@@ -13,16 +13,38 @@ html{
 
 body{
     width: 100%;
+    margin: 0px;
 }
 
 #jours {
     margin-left: 2rem;
 }
 
-.additional_info{
+.info_additionnelles{
     img{
-        width: 20px;
-        height: auto;
+        max-width: 2rem;
+        max-height: 2rem;
+    }
+    ul{
+        list-style: none;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+        li{
+            display: flex;
+            align-items: center;
+            span{
+                margin-left: 0.5rem;
+                display: flex;
+                flex-direction: column;
+                justify-items: center;
+                h3{
+                    margin: 0px;
+                    color: $font-secondary-color;
+                    font-size: small;
+                }
+            }
+        }
     }
 }
 
@@ -66,7 +88,84 @@ a{
     top: 12rem;
     left: 15.5rem;
 }
-// TODO: Change chevron to other side
-// a::before {
-//     content: url(./icons/chevron.svg);
-// }
+.retour_vers_menu::before {
+    content: url(./icons/chevron-left.svg);
+    position: absolute;
+    left: 1rem;
+}
+
+.card{
+    margin-top: 1rem;
+    width: 100%;
+    padding: 1rem;
+    background-color: $secondary-background;
+    h1{
+        margin-top: 0px;
+    }
+    h1::after{
+        content: url(./icons/info.svg);
+        position: absolute;
+        right:1rem;
+        margin-top: 0.2rem;
+        width: 1rem;
+        height: 1rem;
+    }
+    p{
+        margin-bottom: 0px;
+        color: $font-secondary-color;
+        font-weight: bold;
+    }
+}
+
+#cout_moyen{
+    section{
+        margin-top: 1rem;
+    }
+    section:last-child{
+        margin-bottom: 0.5rem;
+    }
+    progress{
+        width: 80%;
+    }
+    h2{
+        margin: 0px;
+        font-size:medium;
+    }
+
+    data{
+        margin-bottom: 1rem;
+    }
+}
+
+.parametres{
+    display: flex;
+    flex-direction: column;
+
+    a{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 1rem;
+        img{
+            margin-left: 1rem;
+            margin-right: 3rem;
+        }
+        h1{
+            font-size: large;
+            font-weight: bold;
+        }
+    }
+
+    a::after{
+        content: url(./icons/chevron.svg);
+        position: absolute;
+        right:1rem;
+        margin-top: 0.2rem;
+        width: 1rem;
+        height: 1rem;
+    }
+
+    p{
+        margin: 2rem;
+    }
+}
