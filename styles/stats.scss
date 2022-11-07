@@ -88,7 +88,7 @@ a{
     top: 12rem;
     left: 15.5rem;
 }
-.retour_vers_menu::before {
+#retour_vers_menu::before {
     content: url(./icons/chevron-left.svg);
     position: absolute;
     left: 1rem;
