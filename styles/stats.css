@@ -68,28 +68,30 @@ a {
 
 .donnees {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 4rem;
   margin: 2rem;
 }
 
 #libelle_recharge {
+  height: 2rem;
   color: #7F8080;
+  margin: 0;
 }
 
 #donnee_recharge {
-  position: absolute;
-  top: 12rem;
+  height: 2rem;
 }
 
 #libelle_depenses {
+  height: 2rem;
   color: #7F8080;
+  margin: 0;
 }
 
 #donnee_depenses {
-  position: absolute;
-  top: 12rem;
-  left: 15.5rem;
+  height: 2rem;
 }
 
 #retour_vers_menu::before {
@@ -167,6 +169,73 @@ a {
 }
 .parametres p {
   margin: 2rem;
+}
+
+@media screen and (orientation: landscape) and (min-width: 415px) {
+  .donnees {
+    position: absolute;
+    top: 2rem;
+    right: 0;
+    width: 70%;
+  }
+  #eco_carburant {
+    position: absolute;
+    right: 0;
+    top: 8rem;
+    width: 50%;
+  }
+  #cout_moyen {
+    position: absolute;
+    right: 0;
+    top: 17rem;
+    width: 50%;
+  }
+  .graph {
+    width: 40%;
+    position: absolute;
+    top: 13rem;
+  }
+  .card {
+    width: 40%;
+  }
+  .info_additionnelles {
+    width: 100%;
+  }
+  .info_additionnelles ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    position: absolute;
+    bottom: 5rem;
+    justify-content: space-around;
+  }
+  .parametres {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 5rem;
+  }
+  .parametres a {
+    width: 40%;
+  }
+  .parametres p {
+    background-color: #222323;
+    padding: 1rem;
+    width: 40%;
+  }
+  .parametres a::after {
+    content: url(./icons/chevron.svg);
+    position: absolute;
+    right: 50%;
+    margin-top: 0.2rem;
+    width: 1rem;
+    height: 1rem;
+  }
 }
 
 /*# sourceMappingURL=stats.css.map */
