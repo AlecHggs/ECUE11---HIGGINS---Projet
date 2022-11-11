@@ -177,6 +177,7 @@ a {
     top: 2rem;
     right: 0;
     width: 70%;
+    justify-content: flex-end;
   }
   #eco_carburant {
     position: absolute;
@@ -235,6 +236,40 @@ a {
     margin-top: 0.2rem;
     width: 1rem;
     height: 1rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #retour_vers_menu {
+    background-color: lightgray;
+    color: #161717;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 2rem;
+    height: 5rem;
+  }
+  #retour_vers_menu::before {
+    content: none;
+  }
+  #jours {
+    position: absolute;
+    top: 0.25rem;
+    left: 20rem;
+    color: #161717;
+  }
+  .donnees {
+    position: absolute;
+    right: 1rem;
+    top: 0.55rem;
+    align-items: flex-end;
+    margin: 0;
+  }
+  #donnee_recharge {
+    color: #161717;
+    font-weight: bold;
+  }
+  #donnee_depenses {
+    color: #161717;
+    font-weight: bold;
   }
 }
 
