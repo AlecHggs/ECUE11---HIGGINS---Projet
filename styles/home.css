@@ -96,7 +96,6 @@ button img {
   width: 2.8rem;
 }
 
-/* ---------------------Haut de page--------------------- */
 header {
   display: flex;
   flex-direction: column;
@@ -157,8 +156,6 @@ meter::-webkit-meter-optimum-value {
   top: 3.8rem;
 }
 
-/* ------------------------------------------------------ */
-/* ---------------------Image voiture-------------------- */
 aside {
   display: flex;
   justify-self: center;
@@ -172,8 +169,6 @@ aside img {
   height: auto;
 }
 
-/* ------------------------------------------------------ */
-/* -------------------------Menus------------------------ */
 .menus {
   display: flex;
   flex-direction: column;
@@ -189,8 +184,6 @@ aside img {
   margin-top: 1rem;
 }
 
-/* ------------------------------------------------------ */
-/* ------------------Tablette paysage------------------------ */
 @media screen and (orientation: landscape) and (min-width: 415px) {
   body {
     flex-direction: row;
@@ -237,7 +230,7 @@ aside img {
     width: 45%;
   }
 }
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 1200px) {
   body {
     display: block;
   }
@@ -302,7 +295,7 @@ aside img {
     z-index: 0;
   }
 }
-@media screen and (min-width: 770px) and (max-height: 830px) {
+@media screen and (min-width: 1200px) and (max-height: 830px) {
   .menu_horizontal {
     display: flex;
     flex-wrap: wrap;
