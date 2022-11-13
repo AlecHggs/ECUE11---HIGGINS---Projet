@@ -258,8 +258,8 @@ a{
 @media screen and (min-width: 1200px){
 
     #retour_vers_menu{
-        background-color: lightgray;
-        color: #161717;
+        background-color: $header-secondary-color;
+        color: $font-third-color;
         display: flex;
         justify-content: flex-start;
         padding-left: 2rem;

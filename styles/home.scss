@@ -193,7 +193,6 @@ aside {
     body{
         flex-direction: row;
         flex-wrap: nowrap;
-        // background-color: blue;
         justify-content: center;
         align-items: center;
     }
@@ -202,13 +201,11 @@ aside {
         box-shadow: 0 0 0;
         height: fit-content;
         position: static;
-        // background-color: green;
         width: 50%;
     }
 
     header{
         height: fit-content;
-        // background-color: red;
         width: 50%;
         position: static;
     }
@@ -263,7 +260,7 @@ aside {
         top: 0;
         padding: 1rem;
         width: 100%;
-        background-color: lightgray;
+        background-color: $header-secondary-color;
     }
 
     #statusVoiture {

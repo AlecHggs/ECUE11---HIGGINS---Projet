@@ -240,7 +240,7 @@ a {
 }
 @media screen and (min-width: 1200px) {
   #retour_vers_menu {
-    background-color: lightgray;
+    background-color: #D3D3D4;
     color: #161717;
     display: flex;
     justify-content: flex-start;
