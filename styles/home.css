@@ -17,7 +17,7 @@ body {
   padding: 1rem;
   margin: 0px;
   background-color: #161717;
-  color: #7F8080;
+  color: #7f8080;
   width: 100%;
   height: 100%;
   display: flex;
@@ -83,7 +83,7 @@ a small {
   top: 1.8rem;
   left: 3.2rem;
   font-size: 1rem;
-  color: #7F8080;
+  color: #7f8080;
 }
 
 a::after {
@@ -141,13 +141,13 @@ meter {
 
 meter::-webkit-meter-bar {
   border-radius: 0px;
-  background-color: #2D2F33;
-  border: solid #2D2F33;
+  background-color: #2d2f33;
+  border: solid #2d2f33;
   border-radius: 0.05rem;
 }
 
 meter::-webkit-meter-optimum-value {
-  background-color: #8A8B8C;
+  background-color: #8a8b8c;
   border-radius: 0.05rem;
 }
 
@@ -241,7 +241,7 @@ aside img {
     top: 0;
     padding: 1rem;
     width: 100%;
-    background-color: #D3D3D4;
+    background-color: #d3d3d4;
   }
   #statusVoiture {
     top: 13.8rem;
@@ -284,9 +284,9 @@ aside img {
     width: 45%;
   }
   .menu_horizontal li button {
-    border: 2px solid #8A8B8B;
+    border: 2px solid #8a8b8b;
     width: 10rem;
-    background-color: #2D2F33;
+    background-color: #2d2f33;
   }
   .menu_verticale {
     position: absolute;

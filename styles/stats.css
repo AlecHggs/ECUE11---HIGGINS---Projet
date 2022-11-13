@@ -44,7 +44,7 @@ body {
 }
 .info_additionnelles ul li span h3 {
   margin: 0px;
-  color: #7F8080;
+  color: #7f8080;
   font-size: small;
 }
 
@@ -76,7 +76,7 @@ a {
 
 #libelle_recharge {
   height: 2rem;
-  color: #7F8080;
+  color: #7f8080;
   margin: 0;
 }
 
@@ -86,7 +86,7 @@ a {
 
 #libelle_depenses {
   height: 2rem;
-  color: #7F8080;
+  color: #7f8080;
   margin: 0;
 }
 
@@ -120,7 +120,7 @@ a {
 }
 .card p {
   margin-bottom: 0px;
-  color: #7F8080;
+  color: #7f8080;
   font-weight: bold;
 }
 
@@ -240,7 +240,7 @@ a {
 }
 @media screen and (min-width: 1200px) {
   #retour_vers_menu {
-    background-color: #D3D3D4;
+    background-color: #d3d3d4;
     color: #161717;
     display: flex;
     justify-content: flex-start;
