@@ -1,296 +1,292 @@
 @import "./variables.scss";
 
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-html{
-    font-family: $font-style;
-    background-color: #161717;
-    color: $font-color;
-    width: 100%;
+html {
+  font-family: $font-style;
+  background-color: #161717;
+  color: $font-color;
+  width: 100%;
 }
 
-body{
-    width: 100%;
-    margin: 0px;
+body {
+  width: 100%;
+  margin: 0px;
 }
 
 #jours {
-    margin-left: 2rem;
+  margin-left: 2rem;
 }
 
-.info_additionnelles{
-    img{
-        max-width: 2rem;
-        max-height: 2rem;
-    }
-    ul{
-        list-style: none;
-        display: grid;
-        gap: 1rem;
-        grid-template-columns: repeat(2, 1fr);
-        li{
-            display: flex;
-            align-items: center;
-            span{
-                margin-left: 0.5rem;
-                display: flex;
-                flex-direction: column;
-                justify-items: center;
-                h3{
-                    margin: 0px;
-                    color: $font-secondary-color;
-                    font-size: small;
-                }
-            }
+.info_additionnelles {
+  img {
+    max-width: 2rem;
+    max-height: 2rem;
+  }
+  ul {
+    list-style: none;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    li {
+      display: flex;
+      align-items: center;
+      span {
+        margin-left: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        h3 {
+          margin: 0px;
+          color: $font-secondary-color;
+          font-size: small;
         }
+      }
     }
+  }
 }
 
-.graph{
-    margin-left: 2rem;
-    margin-right: 2rem;
-    img{
-        width: 100%;
-    }
-}
-
-a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: $font-color;
+.graph {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  img {
     width: 100%;
-    font-size: 0.7rem;
+  }
 }
 
-.donnees{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    max-height: 4rem;
-    margin: 2rem;
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: $font-color;
+  width: 100%;
+  font-size: 0.7rem;
 }
 
-#libelle_recharge{
-    height: 2rem;
-    color: $font-secondary-color;
-    margin: 0;
+.donnees {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 4rem;
+  margin: 2rem;
 }
-#donnee_recharge{
-    height: 2rem;
+
+#libelle_recharge {
+  height: 2rem;
+  color: $font-secondary-color;
+  margin: 0;
 }
-#libelle_depenses{
-    height: 2rem;
-    color: $font-secondary-color;
-    margin: 0;
+#donnee_recharge {
+  height: 2rem;
 }
-#donnee_depenses{
-    height: 2rem;
+#libelle_depenses {
+  height: 2rem;
+  color: $font-secondary-color;
+  margin: 0;
+}
+#donnee_depenses {
+  height: 2rem;
 }
 #retour_vers_menu::before {
-    content: url(./icons/chevron-left.svg);
-    position: absolute;
-    left: 1rem;
+  content: url(./icons/chevron-left.svg);
+  position: absolute;
+  left: 1rem;
 }
 
-.card{
+.card {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 1rem;
+  background-color: $secondary-background;
+  position: relative;
+  h1 {
+    margin-top: 0px;
+  }
+
+  .plus_info {
+    img {
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+      margin-top: 0.2rem;
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+
+  p {
+    margin-bottom: 0px;
+    color: $font-secondary-color;
+    font-weight: bold;
+  }
+}
+
+#cout_moyen {
+  section {
     margin-top: 1rem;
-    width: 100%;
-    padding: 1rem;
-    background-color: $secondary-background;
-    position: relative;
-    h1{
-        margin-top: 0px;
-    }
+  }
+  section:last-child {
+    margin-bottom: 0.5rem;
+  }
+  progress {
+    width: 80%;
+  }
+  h2 {
+    margin: 0px;
+    font-size: medium;
+  }
 
-    .plus_info{
-        img {
-            position: absolute;
-            right:1rem;
-            top: 1rem;
-            margin-top: 0.2rem;
-            width: 1rem;
-            height: 1rem;
-        }
-    }
-
-    p{
-        margin-bottom: 0px;
-        color: $font-secondary-color;
-        font-weight: bold;
-    }
+  data {
+    margin-bottom: 1rem;
+  }
 }
 
-#cout_moyen{
-    section{
-        margin-top: 1rem;
-    }
-    section:last-child{
-        margin-bottom: 0.5rem;
-    }
-    progress{
-        width: 80%;
-    }
-    h2{
-        margin: 0px;
-        font-size:medium;
-    }
+.parametres {
+  display: flex;
+  flex-direction: column;
 
-    data{
-        margin-bottom: 1rem;
-    }
-}
-
-.parametres{
+  a {
     display: flex;
-    flex-direction: column;
-
-    a{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        padding: 1rem;
-        img{
-            margin-left: 1rem;
-            margin-right: 3rem;
-        }
-        h1{
-            font-size: large;
-            font-weight: bold;
-        }
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 1rem;
+    img {
+      margin-left: 1rem;
+      margin-right: 3rem;
     }
-
-    a::after{
-        content: url(./icons/chevron.svg);
-        position: absolute;
-        right:1rem;
-        margin-top: 0.2rem;
-        width: 1rem;
-        height: 1rem;
+    h1 {
+      font-size: large;
+      font-weight: bold;
     }
+  }
 
-    p{
-        margin: 2rem;
-    }
+  a::after {
+    content: url(./icons/chevron.svg);
+    position: absolute;
+    right: 1rem;
+    margin-top: 0.2rem;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  p {
+    margin: 2rem;
+  }
 }
 
-@media screen and (orientation: landscape) and (min-width: 415px){
+@media screen and (orientation: landscape) and (min-width: 415px) {
+  .donnees {
+    position: absolute;
+    top: 2rem;
+    right: 0;
+    width: 70%;
+    justify-content: flex-end;
+  }
 
-    .donnees{
-        position: absolute;
-        top: 2rem;
-        right: 0;
-        width: 70%;
-        justify-content: flex-end;
+  #eco_carburant {
+    position: absolute;
+    right: 0;
+    top: 8rem;
+    width: 50%;
+  }
+
+  #cout_moyen {
+    position: absolute;
+    right: 0;
+    top: 17rem;
+    width: 50%;
+  }
+
+  .graph {
+    width: 40%;
+    position: absolute;
+    top: 13rem;
+  }
+
+  .card {
+    width: 40%;
+  }
+
+  .info_additionnelles {
+    width: 100%;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      position: absolute;
+      bottom: 5rem;
+      justify-content: space-around;
+    }
+  }
+  .parametres {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 5rem;
+    a {
+      width: 40%;
+    }
+    p {
+      background-color: $secondary-background;
+      padding: 1rem;
+      width: 40%;
     }
 
-    #eco_carburant{
-        position: absolute;
-        right: 0;
-        top: 8rem;
-        width: 50%;
+    a::after {
+      content: url(./icons/chevron.svg);
+      position: absolute;
+      right: 50%;
+      margin-top: 0.2rem;
+      width: 1rem;
+      height: 1rem;
     }
-
-    #cout_moyen{
-        position: absolute;
-        right: 0;
-        top: 17rem;
-        width: 50%;
-    }
-
-    .graph{
-        width: 40%;
-        position: absolute;
-        top: 13rem;
-    }
-
-    .card{
-        width: 40%;
-    }
-
-    .info_additionnelles{
-        width: 100%;
-
-        ul{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            width: 100%;
-            position: absolute;
-            bottom: 5rem;
-            justify-content: space-around;
-        }
-        
-    }
-    .parametres{
-        position: absolute;
-        bottom: 0;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        width: 100%;
-        height: 5rem;
-        a{
-            width: 40%;
-        }
-        p{
-            background-color: $secondary-background;
-            padding: 1rem;
-            width: 40%;
-        }
-
-        a::after{
-            content: url(./icons/chevron.svg);
-            position: absolute;
-            right: 50%;
-            margin-top: 0.2rem;
-            width: 1rem;
-            height: 1rem;
-        }
-    }
+  }
 }
 
+@media screen and (min-width: 1200px) {
+  #retour_vers_menu {
+    background-color: $header-secondary-color;
+    color: $font-third-color;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 2rem;
+    height: 5rem;
+  }
+  #retour_vers_menu::before {
+    content: none;
+  }
 
-@media screen and (min-width: 1200px){
+  #jours {
+    position: absolute;
+    top: 0.25rem;
+    left: 20rem;
+    color: #161717;
+  }
 
-    #retour_vers_menu{
-        background-color: $header-secondary-color;
-        color: $font-third-color;
-        display: flex;
-        justify-content: flex-start;
-        padding-left: 2rem;
-        height: 5rem;
-    }
-    #retour_vers_menu::before {
-        content: none;
-    }
+  .donnees {
+    position: absolute;
+    right: 1rem;
+    top: 0.55rem;
+    align-items: flex-end;
+    margin: 0;
+  }
 
-    #jours{
-        position: absolute;
-        top: 0.25rem;
-        left: 20rem;
-        color: #161717;
-    }
+  #donnee_recharge {
+    color: #161717;
+    font-weight: bold;
+  }
 
-    .donnees{
-        position: absolute;
-        right: 1rem;
-        top: 0.55rem;
-        align-items: flex-end;
-        margin: 0;
-    }
-
-    #donnee_recharge{
-        color: #161717;
-        font-weight: bold;
-    }
-
-    #donnee_depenses{
-        color: #161717;
-        font-weight: bold;
-    }
+  #donnee_depenses {
+    color: #161717;
+    font-weight: bold;
+  }
 }
